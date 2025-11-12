@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutSection = () => {
   return (
-    <section className="container mx-auto px-6 py-16">
+    <section className="containers mx-auto px-6 py-16">
       {/* Title */}
       <div className="flex justify-center p-4">
         <h2 className="text-5xl font-serif text-[#567C8E] mb-4 capitalize">

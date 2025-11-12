@@ -9,15 +9,15 @@ const Header = () => {
   return (
     <header className="bg-white border-b shadow-sm">
       <TopBar/>
-      <div className="container mx-auto px-6 py-3 flex items-center justify-between">
+      <div className="containers mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
-        <div className="flex items-center gap-2">
+        <div>
           <Image
             src="/logo1.png"
             alt="Holy Gate Logo"
             width={70}
             height={70}
-            className="object-contain w-[60px] h-[60px] md:w-[70px] md:h-[70px]"
+            className="object-contain w-[70px] h-[70px] md:w-24 md:h-24"
             priority
           />
         </div>  

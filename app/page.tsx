@@ -7,25 +7,8 @@ import HeroSection from "@/components/userComponents/HeroSection";
 import Highlights from "@/components/userComponents/Highlights";
 import NextEventSection from "@/components/userComponents/NextEventSection";
 import SupportSection from "@/components/userComponents/SupportSection";
-import Image from "next/image";
-import Link from "next/link";
 
 const HomePage = () => {
-  const churches = [
-    { name: "Prayer Need", image: "/church1.jpg" },
-    { name: "Sermon", image: "/church2.jpg" },
-    { name: "Prayer Need", image: "/church3.jpg" },
-    { name: "Prayer Need", image: "/church4.jpg" },
-    { name: "Prayer Need", image: "/church5.jpg" },
-    { name: "Prayer Need", image: "/church6.jpg" },
-  ];
-
-  const events = [
-    { icon: "📅", label: "Today", date: "11" },
-    { icon: "📅", label: "Weekly", date: "7" },
-    { icon: "📅", label: "Monthly", date: "30" },
-    { icon: "📅", label: "Yearly", date: "365" },
-  ];
 
   return (
     <div className="min-h-screen bg-white">

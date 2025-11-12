@@ -4,7 +4,7 @@ import { Phone, Mail } from "lucide-react";
 const TopBar = () => {
   return (
     <div className="bg-[#2B5C77] text-white text-sm py-1 border-b border-[#1d4254]">
-      <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-2">
+      <div className="containers mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-2">
         {/* Left Side: Announcement */}
         <p className="text-center md:text-left">
           Upcoming event: <span className="font-semibold">25 days 10 Hours 45 Seconds</span>

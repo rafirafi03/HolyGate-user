@@ -1,9 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { Button } from "@/components/common/button";
-import { Input } from "@/components/common/input";
-import { TextInput } from "../custom_inputs/TextInput";
 import { FcGoogle } from "react-icons/fc";
 
 
@@ -12,13 +9,21 @@ const AuthCard = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = (e) => {
+  interface AuthFormValues {
+    email: string;
+    password: string;
+  }
+
+  type ButtonEvent = React.MouseEvent<HTMLButtonElement> | React.FormEvent<HTMLFormElement>;
+
+  const handleSubmit = (e: ButtonEvent): void => {
     e.preventDefault();
-    console.log("Login attempt:", { email, password });
+    const payload: AuthFormValues = { email, password };
+    console.log("Login attempt:", payload);
   };
 
   return (
-    <div className="w-[50vh]   h-[50%] bg-[#567C8E] rounded-lg p-8 shadow-xl ">
+    <div className="w-[60vh] h-[50%] bg-[#567C8E] rounded-lg p-8 shadow-xl ">
       <h2 className="text-2xl font-normal text-white text-center mb-8">
         Login Or Sign In
       </h2>

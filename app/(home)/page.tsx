@@ -66,8 +66,10 @@ const HomePage = () => {
       <section className="container mx-auto px-6 py-16">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative h-64 md:h-96 rounded-lg overflow-hidden">
-            <img 
+            <Image 
               src="/silhouette-praying.jpg" 
+              width={1000}
+              height={1000}
               alt="Person praying" 
               className="w-full h-full object-cover"
             />
@@ -124,8 +126,10 @@ const HomePage = () => {
             </button>
           </div>
           <div className="relative h-64 md:h-96 rounded-lg overflow-hidden">
-            <img 
+            <Image 
               src="/bible-candle.jpg" 
+              width={1000}
+              height={1000}
               alt="Bible with candle" 
               className="w-full h-full object-cover"
             />
@@ -160,8 +164,10 @@ const HomePage = () => {
           {churches.map((church, idx) => (
             <div key={idx} className="text-center">
               <div className="relative h-48 mb-3 rounded-lg overflow-hidden">
-                <img 
+                <Image 
                   src={church.image} 
+                  width={400}
+                  height={400}
                   alt={church.name}
                   className="w-full h-full object-cover"
                 />
@@ -176,9 +182,11 @@ const HomePage = () => {
       <section className="bg-gray-50 py-16">
         <div className="container mx-auto px-6 text-center">
           <div className="w-32 h-32 mx-auto mb-6">
-            <img 
+            <Image 
               src="/crown-thorns.png" 
               alt="Crown of thorns" 
+              width={1000}
+              height={1000}
               className="w-full h-full object-contain"
             />
           </div>
@@ -189,9 +197,11 @@ const HomePage = () => {
       {/* Map Section */}
       <section className="container mx-auto px-6 py-16">
         <div className="relative h-96 bg-gray-200 rounded-lg overflow-hidden">
-          <img 
+          <Image 
             src="/map-placeholder.jpg" 
             alt="Map" 
+            width={1000}
+            height={1000}
             className="w-full h-full object-cover"
           />
           <button className="absolute top-4 right-4 px-4 py-2 bg-[#567C8E] text-white rounded hover:bg-[#4a6a7a]">

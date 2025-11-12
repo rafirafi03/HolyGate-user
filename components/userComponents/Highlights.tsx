@@ -24,7 +24,7 @@ const Highlights = () => {
 
   return (
     <section className="py-12 ">
-      <div className="container mx-auto  ">
+      <div className="containers mx-auto  ">
         <div className="grid md:grid-cols-3 gap-3">
           {highlights.map((item) => (
             <div

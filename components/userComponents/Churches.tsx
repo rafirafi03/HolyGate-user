@@ -11,16 +11,16 @@ const Churches = () => {
   ];
 
   return (
-    <section className=" py-16">
-      <div className="container mx-auto px-6">
+    <section className="containers mx-auto py-10!">
+      <div className="">
         {/* Section Title */}
         <h2 className="text-3xl font-serif text-[#567C8E] text-center mb-10">
           Our Churches
         </h2>
 
         {/* Grid of Churches */}
-        <div className="flex justify-center">
-          <div className="grid w-[80%] sm:grid-cols-2 md:grid-cols-3 gap-10 justify-items-center">
+        <div className="">
+          <div className="grid w-full sm:grid-cols-2 md:grid-cols-4 gap-10">
             {churches.map((church) => (
               <div
                 key={church.id}

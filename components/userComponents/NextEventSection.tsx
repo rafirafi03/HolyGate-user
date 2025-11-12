@@ -9,8 +9,8 @@ const NextEventSection = () => {
   ];
 
   return (
-    <section className="bg-white py-16">
-      <div className="container mx-auto px-6">
+    <section className="bg-white py-16! containers mx-auto">
+      <div className="">
         <div className="flex justify-center md:grid-cols-2 items-center gap-8">
           
           {/* Left content */}

@@ -2,11 +2,11 @@ import React from "react";
 
 const SupportSection = () => {
   return (
-    <section className="container mx-auto px-6 py-16 ">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-2 items-center shadow-lg">
+    <section className="containers mx-auto py-10! ">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-2 items-center shadow-xl">
         {/* Left Image (1/4 width on md and above) */}
         <div className="md:col-span-1 flex justify-center">
-          <div className="relative h-60 w-40 md:h-60 rounded-lg overflow-hidden shadow-lg">
+          <div className="relative h-60 w-60 md:h-60 rounded-lg overflow-hidden shadow-lg">
             <img
               src="/hand.png"
               alt="Person praying"
