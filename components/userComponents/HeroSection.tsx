@@ -20,22 +20,23 @@ const HeroSection = () => {
         </h1>
 
         {/* Search Bar */}
-        <div className="flex items-center bg-white/90 rounded-full shadow-md w-full max-w-md mx-auto mb-10 overflow-hidden backdrop-blur-md">
-          <input
-            type="text"
-            placeholder="Search"
-            className="flex-1 px-5 py-3 text-gray-800 placeholder-gray-500 bg-transparent outline-none"
-          />
-          <button className="bg-[#567C8E] hover:bg-[#4a6a7a] px-4 py-3 flex items-center justify-center transition-colors">
-            <Search className="w-5 h-5 text-white" />
-          </button>
-        </div>
+        <div className="flex items-center bg-white/20 border border-white/30 rounded-md shadow-lg w-full max-w-md mx-auto mb-10 overflow-hidden  transition-all duration-300 hover:shadow-xl">
+  <input
+    type="text"
+    placeholder="Search..."
+    className="flex-1 px-5 py-3 text-white placeholder-white/70 bg-transparent outline-none"
+  />
+  <button className=" hover:bg-[#4a6a7a]/90 px-4 py-3 flex items-center justify-center transition-colors">
+    <Search className="w-5 h-5 text-white" />
+  </button>
+</div>
+
 
         {/* Icon Actions */}
         <div className="flex flex-wrap justify-center gap-8">
           {/* Watch */}
           <div className="flex flex-col items-center space-y-2">
-            <div className="bg-white/20 hover:bg-white/30 p-4 rounded-full backdrop-blur-md transition">
+            <div className="bg-white/10 hover:bg-white/10 p-4 rounded-sm  transition">
               <Play className="w-6 h-6" />
             </div>
             <p className="text-sm font-medium">Watch</p>
@@ -43,7 +44,7 @@ const HeroSection = () => {
 
           {/* Give */}
           <div className="flex flex-col items-center space-y-2">
-            <div className="bg-white/20 hover:bg-white/30 p-4 rounded-full backdrop-blur-md transition">
+            <div className="bg-white/10 hover:bg-white/10 p-4 rounded-sm  transition">
               <Heart className="w-6 h-6" />
             </div>
             <p className="text-sm font-medium">Give</p>
@@ -51,7 +52,7 @@ const HeroSection = () => {
 
           {/* Who We Are */}
           <div className="flex flex-col items-center space-y-2">
-            <div className="bg-white/20 hover:bg-white/30 p-4 rounded-full backdrop-blur-md transition">
+            <div className="bg-white/10 hover:bg-white/10 p-4 rounded-sm  transition">
               <Users className="w-6 h-6" />
             </div>
             <p className="text-sm font-medium">Who We Are</p>
@@ -59,7 +60,7 @@ const HeroSection = () => {
 
           {/* Events */}
           <div className="flex flex-col items-center space-y-2">
-            <div className="bg-white/20 hover:bg-white/30 p-4 rounded-full backdrop-blur-md transition">
+            <div className="bg-white/10 hover:bg-white/10 p-4 rounded-sm  transition">
               <CalendarDays className="w-6 h-6" />
             </div>
             <p className="text-sm font-medium">Events</p>
