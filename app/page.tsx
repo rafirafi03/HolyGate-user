@@ -1,65 +1,210 @@
+import Header from "@/components/layouts/Header";
+import HeroSection from "@/components/userComponents/HeroSection";
 import Image from "next/image";
+import Link from "next/link";
 
-export default function Home() {
+const HomePage = () => {
+  const churches = [
+    { name: "Prayer Need", image: "/church1.jpg" },
+    { name: "Sermon", image: "/church2.jpg" },
+    { name: "Prayer Need", image: "/church3.jpg" },
+    { name: "Prayer Need", image: "/church4.jpg" },
+    { name: "Prayer Need", image: "/church5.jpg" },
+    { name: "Prayer Need", image: "/church6.jpg" },
+  ];
+
+  const events = [
+    { icon: "📅", label: "Today", date: "11" },
+    { icon: "📅", label: "Weekly", date: "7" },
+    { icon: "📅", label: "Monthly", date: "30" },
+    { icon: "📅", label: "Yearly", date: "365" },
+  ];
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+    <div className="min-h-screen bg-white">
+      {/* Header/Navigation */}
+      <Header/>
+
+      {/* Hero Section */}
+      <HeroSection/>
+
+      {/* Veterans Section */}
+      <section className="container mx-auto px-6 py-16">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="relative h-64 md:h-96 rounded-lg overflow-hidden">
+            <img 
+              src="/silhouette-praying.jpg" 
+              alt="Person praying" 
+              className="w-full h-full object-cover"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+          </div>
+          <div>
+            <h2 className="text-3xl font-serif text-[#567C8E] mb-4">veterans</h2>
+            <p className="text-gray-600 leading-relaxed mb-4">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p className="text-gray-600 leading-relaxed mb-6">
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+              eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <button className="px-6 py-2 bg-[#567C8E] text-white rounded hover:bg-[#4a6a7a]">
+              Read More
+            </button>
+          </div>
         </div>
-      </main>
+      </section>
+
+      {/* Three Column Section */}
+      <section className="bg-[#567C8E] py-12">
+        <div className="container mx-auto px-6">
+          <div className="grid md:grid-cols-3 gap-8">
+            {[1, 2, 3].map((item) => (
+              <div key={item} className="text-center text-white">
+                <div className="w-20 h-20 mx-auto mb-4 bg-white/20 rounded-full flex items-center justify-center">
+                  <span className="text-3xl">📖</span>
+                </div>
+                <h3 className="text-xl mb-2">Feature Title</h3>
+                <p className="text-sm text-white/90">
+                  Brief description of the feature or service offered
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Word That Helps Section */}
+      <section className="container mx-auto px-6 py-16">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 className="text-3xl font-serif text-[#567C8E] mb-4">Word That Helps live</h2>
+            <p className="text-gray-600 leading-relaxed mb-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod 
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+            </p>
+            <button className="px-6 py-2 bg-[#567C8E] text-white rounded hover:bg-[#4a6a7a]">
+              Watch Now
+            </button>
+          </div>
+          <div className="relative h-64 md:h-96 rounded-lg overflow-hidden">
+            <img 
+              src="/bible-candle.jpg" 
+              alt="Bible with candle" 
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Events Section */}
+      <section className="bg-gray-50 py-16">
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl font-serif text-center text-[#567C8E] mb-12">
+            Would You Like to Attend The Next Event?
+          </h2>
+          <div className="flex flex-wrap justify-center gap-8 mb-12">
+            {events.map((event, idx) => (
+              <div key={idx} className="text-center">
+                <div className="w-20 h-20 mx-auto mb-2 bg-white rounded-full shadow-md flex items-center justify-center">
+                  <span className="text-2xl">{event.icon}</span>
+                </div>
+                <p className="text-sm text-gray-600">{event.label}</p>
+                <p className="text-lg font-semibold text-gray-800">{event.date}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Our Churches Section */}
+      <section className="container mx-auto px-6 py-16">
+        <h2 className="text-3xl font-serif text-center text-[#567C8E] mb-12">Our Churches</h2>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+          {churches.map((church, idx) => (
+            <div key={idx} className="text-center">
+              <div className="relative h-48 mb-3 rounded-lg overflow-hidden">
+                <img 
+                  src={church.image} 
+                  alt={church.name}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="text-sm font-medium text-gray-700">{church.name}</h3>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Crown of Thorns Section */}
+      <section className="bg-gray-50 py-16">
+        <div className="container mx-auto px-6 text-center">
+          <div className="w-32 h-32 mx-auto mb-6">
+            <img 
+              src="/crown-thorns.png" 
+              alt="Crown of thorns" 
+              className="w-full h-full object-contain"
+            />
+          </div>
+          <h2 className="text-3xl font-serif text-[#567C8E] mb-2">Find Nearest Church</h2>
+        </div>
+      </section>
+
+      {/* Map Section */}
+      <section className="container mx-auto px-6 py-16">
+        <div className="relative h-96 bg-gray-200 rounded-lg overflow-hidden">
+          <img 
+            src="/map-placeholder.jpg" 
+            alt="Map" 
+            className="w-full h-full object-cover"
+          />
+          <button className="absolute top-4 right-4 px-4 py-2 bg-[#567C8E] text-white rounded hover:bg-[#4a6a7a]">
+            View on Map
+          </button>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-[#3A4A8C] text-white py-12">
+        <div className="container mx-auto px-6">
+          <div className="grid md:grid-cols-4 gap-8">
+            <div>
+              <h3 className="font-semibold mb-4">About Us</h3>
+              <p className="text-sm text-white/80">
+                Holy Gate Church community serving faith and fellowship.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-semibold mb-4">Quick Links</h3>
+              <ul className="space-y-2 text-sm">
+                <li><Link href="/about" className="text-white/80 hover:text-white">About</Link></li>
+                <li><Link href="/events" className="text-white/80 hover:text-white">Events</Link></li>
+                <li><Link href="/media" className="text-white/80 hover:text-white">Media</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-semibold mb-4">Contact</h3>
+              <p className="text-sm text-white/80">Email: info@holygate.com</p>
+              <p className="text-sm text-white/80">Phone: (123) 456-7890</p>
+            </div>
+            <div>
+              <h3 className="font-semibold mb-4">Follow Us</h3>
+              <div className="flex gap-4">
+                <a href="#" className="text-white/80 hover:text-white">FB</a>
+                <a href="#" className="text-white/80 hover:text-white">TW</a>
+                <a href="#" className="text-white/80 hover:text-white">IG</a>
+              </div>
+            </div>
+          </div>
+          <div className="mt-8 pt-8 border-t border-white/20 text-center text-sm text-white/60">
+            © 2024 Holy Gate. All rights reserved.
+          </div>
+        </div>
+      </footer>
     </div>
   );
-}
+};
+
+export default HomePage;
