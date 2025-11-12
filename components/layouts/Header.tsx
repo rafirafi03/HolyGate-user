@@ -20,7 +20,7 @@ const Header = () => {
             className="object-contain w-[60px] h-[60px] md:w-[70px] md:h-[70px]"
             priority
           />
-        </div>
+        </div>  
 
         {/* Navigation Links */}
         <nav className="hidden lg:flex items-center gap-6 text-sm font-medium text-gray-700">

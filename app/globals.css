@@ -26,7 +26,7 @@
 body {
   background-color: #FFFDF5; 
   color: var(--foreground);
-  font-family: 'Playfair Display', serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 #root {
