@@ -3,40 +3,42 @@ import AuthCard from "@/components/userComponents/AuthCard";
 
 const Page = () => {
   return (
-    <div className="min-h-screen w-full bg-background overflow-x-hidden flex flex-col justify-between relative">
+    <div className=" w-full overflow-hidden flex flex-col relative">
       {/* Logo */}
-      <div className="fixed top-8 left-8 z-20">
-        <Image
-          src="/logo1.png"
-          alt="Logo"
-          width={100}
-          height={100}
-          priority
-        />
+      <div className="absolute top-8 left-8 z-20">
+      <div className="w-[10vh] sm:w-[15vh] md:w-[18vh] lg:w-[20vh]">
+  <Image
+    src="/logo1.png"
+    alt="Logo"
+    width={200}
+    height={150}
+    className="w-full h-auto object-contain"
+    priority
+  />
+</div>
       </div>
 
       {/* Main Section */}
-      <div className="flex flex-col lg:flex-row items-center justify-between flex-grow px-8 lg:px-16 pt-24 lg:pt-0">
+      <div className="flex flex-col mt-32  lg: flex-row items-center justify-between flex-grow px-6 md:px-16 lg:px-20 ">
         {/* Left - Auth Card */}
-        <div className="flex justify-center lg:justify-start w-full lg:w-1/2 z-10">
+        <div className="pt-0 lg:pt-20 flex justify-center lg:justify-start w-full lg:w-1/2 z-10 ">
           <AuthCard />
         </div>
 
         {/* Right - Background Image */}
-        <div className=" lg:block relative w-1/2 xl:w-3/5 h-[90vh]">
+        <div className="absolute right-0 w-full lg:w-1/2 h-[50vh] lg:h-[80vh] flex justify-center lg:justify-start items-center">
           <img
             src="/spiritual-image.png"
             alt="Spiritual imagery"
-            className="absolute inset-0 w-full h-full object-cover opacity-90"
+            className="w-[80%] lg: object-contain opacity-90"
           />
-          <div className="absolute inset-0 bg-gradient-to-l from-transparent to-background/30"></div>
         </div>
       </div>
 
       {/* Bottom Text */}
-      <div className="py-12 text-center">
-        <h1 className="text-2xl md:text-3xl font-serif text-muted-foreground/60 tracking-wider">
-          THE DOOR WAYS TO LIVING FAITH
+      <div className="py-8 text-center">
+        <h1 className="text-xl md:text-2xl font-serif text-gray-400 tracking-[0.3em] uppercase ">
+          The door ways to living faith
         </h1>
       </div>
     </div>
