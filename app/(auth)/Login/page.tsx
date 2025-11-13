@@ -1,5 +1,5 @@
 import Image from "next/image";
-import AuthCard from "@/components/userComponents/AuthCard";
+import AuthCard from "@/components/userComponents/login/AuthCard";
 
 const Page = () => {
   return (
