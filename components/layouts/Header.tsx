@@ -7,7 +7,7 @@ import TopBar from "./TopBar";
 
 const Header = () => {
   return (
-    <header className="bg-white border-b shadow-sm">
+    <header className="bg-white shadow-sm">
       <TopBar/>
       <div className="containers mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
