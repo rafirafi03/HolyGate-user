@@ -5,7 +5,7 @@ import Churches from "@/components/userComponents/home/Churches";
 import ChurchMap from "@/components/userComponents/home/ChurchMap";
 import HeroSection from "@/components/userComponents/home/HeroSection";
 import Highlights from "@/components/userComponents/home/Highlights";
-import NextEventSection from "@/components/userComponents/home/NextEventSection";
+import NextEventSection from "@/components/common/NextEventSection";
 import SupportSection from "@/components/userComponents/home/SupportSection";
 
 const HomePage = () => {

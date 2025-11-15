@@ -33,7 +33,7 @@ const FAQSection = () => {
         </div>
 
         {/* Right questions */}
-        <div className="flex sm:w-20 md:w-100 flex-col space-y-7 text-right md:text-left">
+        <div className="flex sm:w-20 md:w-100 flex-col space-y-7 text-left md:text-left">
           <p className="border-b border-white/40 pb-2">who was jesus human mother</p>
           <p className="border-b border-white/40 pb-2">who was jesus human mother</p>
           <p className="border-b border-white/40 pb-2">who was jesus human mother</p>
