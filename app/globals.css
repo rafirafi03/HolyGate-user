@@ -2,12 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* 🚀 GLOBAL FIX – Prevent white gap */
+
+
+html, body {
+  overflow-x: hidden; /* 💥 STOPS WHITE GAP */
+}
+
 :root {
-  /* You can define theme variables here if needed */
 }
 
 @theme inline {
@@ -15,12 +21,6 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* Add dark mode styles here if needed */
-  }
 }
 
 body {
@@ -72,6 +72,7 @@ body {
   color: #888;
 }
 
+/* Responsive container width */
 @media (min-width: 1024px) {
   .containers {
     width: 95%;

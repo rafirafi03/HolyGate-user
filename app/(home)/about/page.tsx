@@ -1,6 +1,6 @@
 import AboutHeroSection from '@/components/userComponents/about/AboutHeroSection'
 import FAQSection from '@/components/userComponents/about/FAQSection'
-import LeadershipTeamSection from '@/components/userComponents/about/LeadershipTeamSection'
+import LeadershipTeamSection from '@/components/userComponents/about/HighlightsAndLeadership'
 import VisionMissionSection from '@/components/userComponents/about/VisionMissionSection'
 import React from 'react'
 
